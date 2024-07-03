@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family:'Honey Crepes';
+    src: url(../fonts/Honey\ Crepes.otf);
+}
+@font-face {
+    font-family: 'letra';
+    src: url(../fonts/letra.otf);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 2px;
+    font-family: 'Honey Crepes';
+    background-color: rgb(243, 148, 148);
+}
+section{
+width: 100%;
+height: 100%;
+padding: 0%;
+margin: 0%;
+}
+#s2{
+    background-image: url(../media/psico2.jpg);
+    background-size: cover;
+}
+#s3{
+    background-image: url(../media/psico2.jpg);
+    background-size: cover;
+}
+
+
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#menu_principal ul{
+    width: 100%;
+    background-color: rgb(236, 156, 156);
+    list-style: none;
+    opacity: 1;
+}
+#menu_principal ul li{
+    display: inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+    line-height: 1em;
+}
+
+#menu_principal ul li, a{
+    font-family: 'Honey Crepes';
+    text-decoration: none;
+    padding: 10px 40px;
+    color: rgb(155, 64, 99);
+}
+#menu_principal ul:hover{
+    opacity: 1;
+}
+#menu_principal ul li a:hover{
+    color: bisque;
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+span{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 15px;
+    color: antiquewhite;
+}
+p{
+    color: rgb(204, 39, 67);
+    margin: 10px;
+    padding: 10px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.parallax{
+    background-size: cover;
+    background: #fff fixed no-repeat 50% 50%;
+}
+body{
+    background-image: url(../img/fondoParticulas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+

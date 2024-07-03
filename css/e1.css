@@ -1,0 +1,109 @@
+.titulo{
+    text-align: center;
+    font-family: 'letra';
+    color: #f2cc02;
+    letter-spacing: 10px;
+    font-size: 32px;
+    margin-top: 10vh;
+    width: 100%;
+    background-color: rgb(231, 146, 235);
+    opacity: .3;
+    animation: flotar 2s linear infinite alternate;
+}
+@keyframes flotar{
+    to{
+        margin-top: 15vh;
+        color: rgb(97, 255, 45);
+        font-size: 10px;
+    }
+}
+.particulas div{
+    
+    
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0px;
+    animation: animarParticulas 4s linear infinite;
+}
+@keyframes animarParticulas{
+    0%{
+        width: 0%;
+        height: 0;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+        margin-left: 10px;
+    }
+    100%{
+        transform: rotate(90deg);
+        bottom: 100vh;
+    }
+}
+.particulas div:nth-child(1){
+    width: 20px;
+    height: 20px;
+    left: 25px;
+    animation-duration: 4s;
+    background-color: rgb(241, 189, 205);
+    background-image: url(../media/pngwing.com\ \(4\).png);
+}
+.particulas div:nth-child(2){
+    width: 20px;
+    height: 20px;
+    left: 35px;
+    animation-duration: 7s;
+    background-color: rgb(245, 186, 202);
+    background-image: url(../media/pngwing.com\ \(5\).png);
+}
+.particulas div:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 10s;
+    background-color: rgb(231, 166, 216);
+    background-image: url(../media/pngwing.com\ \(5\).png);
+}
+.particulas div:nth-child(4){
+    width: 20px;
+    height: 20px;
+    left: 89px;
+    animation-duration: 15s;
+    background-color: rgb(179, 227, 241);
+    background-image: url(../media/pngwing.com\ \(5\).png);
+}
+.particulas div:nth-child(5){
+    width: 20px;
+    height: 20px;
+    left: 65%;
+    animation-duration: 19s;
+    background-color: rgb(241, 199, 236);
+    background-image: url(../media/pngwing.com\ \(5\).png);
+}
+.particulas div:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 85%;
+    animation-duration: 25s;
+    background-color: rgb(211, 179, 241);
+    background-image: url(../media/pngwing.com\ \(5\).png);
+}
+h1{
+    text-align: justify;
+}
+audio{
+    width: 20%;
+    margin: 20px auto;
+    
+}
+.universidad{
+    color: blanchedalmond;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: bisque;
+}

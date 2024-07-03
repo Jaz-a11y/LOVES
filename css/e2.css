@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'letra';
+}
+body{
+    overflow: hidden;
+}
+
+.historia-content:target {
+    display: block;
+}
+
+#psicologia-amor {
+    background-color: #e58080;
+}
+
+.historieta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.input-pagina {
+    display: none;
+}
+
+.pagina {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.pagina:hover {
+    opacity: 1;
+}
+
+.pagina img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pagina:hover img {
+    transform: scale(1.30);
+}
+
+.burbujas-corazon {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.burbujas-corazon:before {
+    content: '❤️';
+    font-size: 12px;
+    position: absolute;
+    animation: subir-burbuja 5s ease infinite;
+    opacity: 0;
+}
+
+@keyframes subir-burbuja {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.burbujas-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.burbujas-header:before {
+    content: '❤️';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff6666;
+    animation: burbujas 15s linear infinite;
+}
+
+@keyframes burbujas {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-800px) translateX(100px) scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-1600px) translateX(200px) scale(0);
+        opacity: 0;
+    }
+}
+
+audio{
+    width: 20%;
+    margin: 20px auto;
+    background-color: #303841;
+    border: #d3d3d3 solid 2px;
+    border-radius: 4px;
+    padding: 5px;
+}
